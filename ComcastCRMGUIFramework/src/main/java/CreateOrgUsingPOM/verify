@@ -1,0 +1,150 @@
+//verfiy the org name is created
+		String result = driver.findElement(By.xpath("//span[@class='dvHeaderText']")).getText();
+		
+		if(result.contains(Org_name)) {
+			System.out.println(Org_name+" oraganization is successfully created");
+		}
+		else {
+			System.out.println(Org_name+" oraganization is failed to create");
+		}
+		
+		//verify the organization name in organization information
+		String ResultOrg_name = driver.findElement(By.id("dtlview_Organization Name")).getText();
+		if(ResultOrg_name.equals(Org_name)) {
+			System.out.println("====verified=====");
+		}
+		else {
+			System.out.println("====failed===");
+		}
+		
+		
+		
+				//verfiy the org name is created
+		String resultHead = driver.findElement(By.xpath("//span[@class='dvHeaderText']")).getText();
+		
+		
+		if(resultHead.contains(Org_name)) {
+			System.out.println(Org_name+" oraganization is successfully created");
+		}
+		else {
+			System.out.println(Org_name+" oraganization is failed to create");
+		}
+		
+		//verify the organization name in organization information
+		String ResultOrg_name = driver.findElement(By.id("dtlview_Organization Name")).getText();
+		if(ResultOrg_name.equals(Org_name)) {
+			System.out.println("====verified Org_name=====");
+		}
+		else {
+			System.out.println("====failed Org_name===");
+		}
+		String ResultInd = driver.findElement(By.id("dtlview_Industry")).getText();
+		if(ResultInd.equals(Industry)) {
+			System.out.println("====verified Industry=====");
+		}
+		else {
+			System.out.println("====failed Industry===");
+		}
+		String ResultType = driver.findElement(By.id("dtlview_Type")).getText();
+		if(ResultType.equals(Type)) {
+			System.out.println("====verified Type=====");
+		}
+		else {
+			System.out.println("====failed Type===");
+		}
+		
+		
+		
+		//verfiy the org name is created
+		String resultHead = driver.findElement(By.xpath("//span[@class='dvHeaderText']")).getText();
+		
+		
+		if(resultHead.contains(Org_name)) {
+			System.out.println(Org_name+" oraganization is successfully created");
+		}
+		else {
+			System.out.println(Org_name+" oraganization is failed to create");
+		}
+		
+		//verify the organization name in organization information
+		String ResultOrg_name = driver.findElement(By.id("dtlview_Organization Name")).getText();
+		if(ResultOrg_name.equals(Org_name)) {
+			System.out.println("====verified Org_name=====");
+		}
+		else {
+			System.out.println("====failed Org_name===");
+		}
+		String ResultInd = driver.findElement(By.id("dtlview_Industry")).getText();
+		if(ResultInd.equals(Industry)) {
+			System.out.println("====verified Industry=====");
+		}
+		else {
+			System.out.println("====failed Industry===");
+		}
+		String ResultType = driver.findElement(By.id("dtlview_Type")).getText();
+		if(ResultType.equals(Type)) {
+			System.out.println("====verified Type=====");
+		}
+		else {
+			System.out.println("====failed Type===");
+		}
+		String ResultPhone = driver.findElement(By.id("dtlview_Phone")).getText();
+		if(ResultPhone.equals(Phone)) {
+			System.out.println("====verified Phone=====");
+		}
+		else {
+			System.out.println("====failed Phone===");
+		}
+		
+		
+		//verify the values
+		String resultLname = driver.findElement(By.xpath("//span[@class='dvHeaderText']")).getText();
+		if(resultLname.contains(lastName)) {
+			System.out.println("====lastname is verified====");
+		}
+		else {
+			System.out.println("====lastname is incorrect====");
+		}
+		
+		String lname = driver.findElement(By.id("dtlview_Last Name")).getText();
+		if(lname.equals(lastName+RanValue)) {
+			System.out.println("====Lastname verified successfully====");
+		}
+		else {
+			System.out.println("====LastName not verfied====");
+		}
+		
+		
+		
+		//verify the values
+		String resultLname = driver.findElement(By.xpath("//span[@class='dvHeaderText']")).getText();
+		if(resultLname.contains(lastName)) {
+			System.out.println("====lastname is verified====");
+		}
+		else {
+			System.out.println("====lastname is incorrect====");
+		}
+		
+		String lname = driver.findElement(By.id("dtlview_Last Name")).getText();
+		if(lname.equals(lastName+RanValue)) {
+			System.out.println("====Lastname verified successfully====");
+		}
+		else {
+			System.out.println("====LastName not verfied====");
+		}
+		
+		String actStartDate = driver.findElement(By.id("dtlview_Support Start Date")).getText();
+		if(actStartDate.equals(startDate)) {
+			System.out.println(startDate+"====StartDate verified successfully====");
+		}
+		else {
+			System.out.println(startDate+"====StartDate Failed to verfiy====");
+		}
+		
+		String actEndDate = driver.findElement(By.id("dtlview_Support End Date")).getText();
+		if(actEndDate.equals(endDate)) {
+			System.out.println(endDate+"====EndDate verified successfully====");
+		}
+		else {
+			System.out.println(endDate+"====EndDate Failed to verfiy====");
+		}
