@@ -7,6 +7,13 @@ public class ProductPage {
 
 	@FindBy(xpath = "//img[@alt=\"Create Product...\"]")
 	private WebElement ProdPlusBtn;
+	
+	@FindBy(xpath = "//img[@alt='Open Calendar...']")
+	private WebElement CalenderBtn;
+
+	public WebElement getCalenderBtn() {
+		return CalenderBtn;
+	}
 
 	@FindBy(name = "search_text")
 	private WebElement SearchField;
