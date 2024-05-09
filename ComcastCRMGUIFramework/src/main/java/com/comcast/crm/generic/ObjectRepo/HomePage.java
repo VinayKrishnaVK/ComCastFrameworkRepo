@@ -25,6 +25,17 @@ public class HomePage {
 	@FindBy(xpath="//img[@src='themes/softed/images/user.PNG']")
 	private WebElement SignOutBtn;
 	
+	public WebDriver getDriver() {
+		return driver;
+	}
+
+	public WebElement getProductLink() {
+		return ProductLink;
+	}
+
+	@FindBy(linkText = "Products")
+	private.WebElement ProductLink;
+	
 	public WebElement getContactLink() {
 		return ContactLink;
 	}
